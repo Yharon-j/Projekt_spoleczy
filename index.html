@@ -26,11 +26,10 @@
         header h2 { font-size: 16px; font-weight: normal; color: #ccc; margin-bottom: 15px; }
         header h3 { margin: 10px 0; font-size: 16px; }
 
-        /* Современная сетка вместо устаревших float */
         .container {
             display: flex;
             gap: 20px;
-            flex-wrap: wrap; /* Чтобы на мобилках блоки вставали друг под друга */
+            flex-wrap: wrap;
         }
 
         main {
@@ -103,10 +102,10 @@
 
     <header>
         <h1>Temat: Życie na obczyźnie. Zderzenie kultur</h1>
-        <h2>Teza: Nielegalni imigranci często mają problem z przystosowaniem się do nowych zasad. Czasami zamiast przyjąć nasze prawo, chcą narzucać swoje przyzwyczajenia, co buduje mur między ludźmi i psuje spokój w kraju.</h2>
+        <h2>Teza: Nielegalna migracja może prowadzić do problemów związanych z integracją społeczną oraz przestrzeganiem prawa.</h2>
         <h3>Cele tego projektu:</h3>
         <ul>
-            <li>Pokazanie kłótni na tle kulturowym w Europie (na przykład we Francji i w Wielkiej Brytanii).</li>
+            <li>Przedstawienie problemów związanych z integracją społeczną migrantów.</li>
             <li>Sprawdzenie, dlaczego imigranci tworzą własne zamknięte grupy i nie chcą się mieszać z resztą społeczeństwa.</li>
             <li>Znalezienie sposobów na to, żeby nowi ludzie szanowali nasze prawo i kulturę, zamiast z nimi walczyć.</li>
         </ul>
@@ -128,6 +127,17 @@
                     <li>Art. 49a § 1 KW</li>
                 </ul>
             </section>
+
+            <section class="metody">
+    <h2>Metody badawcze</h2>
+
+    <ul>
+        <li>Analiza przepisów prawa dotyczących nielegalnej migracji.</li>
+        <li>Analiza materiałów wideo dotyczących problemów integracyjnych.</li>
+        <li>Analiza publikacji internetowych i artykułów prasowych.</li>
+        <li>Porównanie przykładów z różnych państw Europy.</li>
+    </ul>
+</section>
 
             <section class="dzialania">
     <h2>Opis działań</h2>
@@ -156,24 +166,30 @@
 
 <section class="bibliografia">
     <h2>Bibliografia</h2>
+
     <ol>
-        <li>Kodeks Karny Rzeczypospolitej Polskiej.</li>
+        <li>Kodeks Karny RP.</li>
         <li>Ustawa o cudzoziemcach.</li>
-        <li>Materiały opublikowane przez Straż Graniczną RP.</li>
-        <li>Portal GOV.PL.</li>
+        <li>https://www.gov.pl</li>
+        <li>https://www.strazgraniczna.pl</li>
         <li>Materiały wideo wykorzystane w projekcie.</li>
     </ol>
 </section>
 
-            <section class="historia">
-                <h2>Historia z Wielkiej Brytanii, gdzie muzułmanie tworzą własne społeczności:</h2>
-                <p>Do dziewczyny, która jest obywatelką Wielkiej Brytanii, pewną nocą podeszło dwóch muzułmanów i pytało, gdzie jest jej hidżab i dlaczego nosi krótką sukienkę. Ale ona odpowiedziała, że jest Brytyjką i nie musi nosić hidżabu, a oni odpowiedzieli, że to jest ich kraj i powinna się dostosować do ich zasad.</p>
-            </section>
+<section class="problemy">
+    <h2>Problemy związane z nielegalną migracją</h2>
+    <ul>
+        <li>Trudności w identyfikacji osób bez dokumentów.</li>
+        <li>Koszty procedur administracyjnych i deportacyjnych.</li>
+        <li>Problemy z integracją społeczną.</li>
+        <li>Naruszanie przepisów dotyczących pobytu na terytorium państwa.</li>
+    </ul>
+</section>
         </main>
 
         <aside>
             <h2>Materiały wideo</h2>
-            <p>Oto kilka linków do filmów, które pokazują, jak nielegalni imigranci naruszają nasze prawo i kulturę (są to tylko przykłady, nie mające na celu nikogo obrazić. Umieszczone są tu ukraińskie, angielskie i polskie materiały omawiające ten temat):</p>
+            <p>pokazują różne problemy związane z nielegalną migracją i integracją społeczną:</p>
             <ul>
                 <li><a href="https://www.youtube.com/watch?v=cw64SkT11dc" target="_blank">Wideo przykład 1</a></li>
                 <li><a href="https://www.youtube.com/watch?v=TQEFBlmYxzI" target="_blank">Wideo przykład 2</a></li>
@@ -205,15 +221,18 @@
             <label for="q2c">Całkowicie uszczelnić granice i zawiesić przyjmowanie jakichkolwiek wniosków</label>
         </div>
 
-        <div class="quiz-group">
-            <span class="quiz-title">3. Czy nielegalni imigranci powinni być deportowani?</span>
-            <input type="radio" id="q3a" name="q3" value="a">
-            <label for="q3a">Tak, powinni być deportowani</label><br>
-            <input type="radio" id="q3b" name="q3" value="b">
-            <label for="q3b">Nie, powinni mieć szansę na legalizację pobytu</label><br>
-            <input type="radio" id="q3c" name="q3" value="c">
-            <label for="q3c">Nie mam zdania</label>
-        </div>
+<div class="quiz-group">
+    <span class="quiz-title">3. Jakie działania przewiduje prawo wobec osób przebywających nielegalnie na terytorium państwa?</span>
+
+    <input type="radio" id="q3a" name="q3" value="a">
+    <label for="q3a">Wdrożenie procedury powrotu lub deportacji zgodnie z obowiązującym prawem</label><br>
+
+    <input type="radio" id="q3b" name="q3" value="b">
+    <label for="q3b">Automatyczne przyznanie obywatelstwa</label><br>
+
+    <input type="radio" id="q3c" name="q3" value="c">
+    <label for="q3c">Brak jakichkolwiek działań ze strony państwa</label>
+</div>
 
         <button type="button" onclick="wyslij()">Sprawdź wynik</button>
     </section>
@@ -227,7 +246,6 @@
         function wyslij() {
             let score = 0;
 
-            // Проверяем, выбраны ли ответы вообще, чтобы не было краша
             const q1Checked = document.querySelector('input[name="q1"]:checked');
             const q2Checked = document.querySelector('input[name="q2"]:checked');
             const q3Checked = document.querySelector('input[name="q3"]:checked');
@@ -243,7 +261,7 @@
 
             if (q1 === "b") score++;
             if (q2 === "a") score++;
-            if (q3 === "a") score++; // Считаем "А" верным с точки зрения закона
+            if (q3 === "a") score++;
 
             alert("Twój wynik: " + score + "/3");
         }
